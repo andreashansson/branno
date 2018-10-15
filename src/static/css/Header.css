@@ -43,3 +43,9 @@
 .Header-Container__MenuListItem:hover::after {
   transform: scaleX(1);
 }
+
+@media (max-width: 768px) {
+  .Header-Container {
+    display: none;
+  }
+}

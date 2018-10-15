@@ -2,11 +2,23 @@ html, body {
   height: 100%;
   font-family: ("https://fonts.googleapis.com/css?family=Ubuntu:700");
   font-size: 16px;
-
 }
 
 body {
   background: url("../images/majorna-1600px.jpg");
   background-size: cover;
   background-repeat: repeat;
+  margin: auto;
+}
+
+@media (min-width: 1367px) {
+  body {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    width: 65%;
+  }
 }
