@@ -1,0 +1,45 @@
+.Header-Container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  height: 60px;
+}
+
+.Header-Container__Menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Header-Container__logo {
+  height: 100%;
+}
+
+.Header-Container__MenuListItem {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 2px;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Header-Container__MenuListItem::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.Header-Container__MenuListItem:hover::after {
+  transform: scaleX(1);
+}
